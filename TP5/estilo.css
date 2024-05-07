@@ -1,0 +1,57 @@
+body{
+    background-color: green;
+margin: 0;
+}
+#contenedor{
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.titulo{
+    font-size: 2em;
+}
+#box1{
+    background-color: grey;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    border: solid 8px black;}
+    #columna1{
+        background-color: red;
+        display: inline-block;
+        height: 200px;
+        width: 30%;
+    
+    }
+    #columna2{
+        background-color: orange;
+        display: inline-block;
+        height: 200px;
+        width: 70%;
+    }
+    .columna{
+        display: inline-block;
+        height: 200px;
+        padding: 20px;
+        box-sizing: border-box;
+       
+
+       }
+    
+ .imagenporcentual{
+    background-color:  lightgreen;
+    display: inline-block;
+    padding: 20px;
+    font-size: 16px;
+    width: 25%;
+    box-sizing: border-box;
+    margin: 1%;
+     }
+     .galeriaporcentual{
+        font-size: 2.5%;
+     }
+     .galeriaporcentual{
+        font-size: 0%;
+     }
