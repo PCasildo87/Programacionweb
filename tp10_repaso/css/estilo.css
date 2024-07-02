@@ -1,57 +1,68 @@
-body{
+body {
     margin: 0;
-    background:(rgb, 58, 160, 215);
+    background: (rgb, 58, 160, 215);
     font-family: 'Courier New', Courier, monospace;
 }
-#contenedor{
+
+#contenedor {
     background-color: white;
     padding: 0.2;
     width: 70%;
     min-height: 100vh;
     margin: 0 auto;
 }
-header{
+
+header {
     font-size: 2em;
     font-weight: 600;
-    text-align: center;
+    text-align: center
 }
-header img{
+    
+
+header img {
     width: 30%;
     display: block;
     margin: 0 auto;
-    min-width: 200px; 
+    min-width: 200px
 }
-#nav{
-    background-color: rgb (20, 87 ,123);
+
+#nav {
+    background-color: rgb (20, 87, 123);
     width: 100%;
-    padding: 02%;
+    padding: 0.2%;
     position: relative;
-    left: -2em;
+    left: 2em;
     margin: 1em 0;
 }
-#nav a{
+
+#nav a {
     color: white;
     text-decoration: none;
     padding: 0.5em;
     display: inline-block;
 }
-#nav a:hover{
+
+#nav a:hover {
     background-color: rgb (8, 45, 64);
 
-} 
-main span{
+}
+
+main span {
     font-size: 0;
 }
-maini img{
+
+main img {
     width: 38%;
     margin-left: 0%;
 }
-#accion{
-        text-align: center;
-        margin: 1em 0;
-        font-size: 2em;
+
+#accion {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
 }
-#accion a{
+
+#accion a {
     display: block;
     width: fit-content;
     margin: 0 auto;
@@ -63,7 +74,8 @@ maini img{
     margin-top: 0.5;
 
 }
-#footer{
+
+#footer {
     background-color: darkblue;
     padding: 0.5 2em;
     position: relative;
@@ -72,39 +84,45 @@ maini img{
     margin-top: 2em;
 
 }
-#footer img{
+
+#footer img {
     width: 50%;
-    vertical-align: middle;
+    vertical-align: middle
 
 }
-h1{
-    border-bottom: 3px solid rgb(20, 87, 123); 
+
+h1 {
+    border-bottom: 3px solid rgb(20, 87, 123);
     margin: 0 0 1em 0;
-
 }
-#sedetxt{
+
+#sedetxt {
     margin-bottom: 2em;
 }
-#forminscripsion{
+
+#forminscripcion {
     width: 40%;
     box-shadow: 3px, 3px, 12px, 0 0 0 0.7;
     padding: 1em;
 }
-#forminscripcion h1{
+
+#forminscripcion h1 {
     margin-bottom: 0.5;
 }
-#forminscrpcion span{
+
+#forminscrpcion span {
     display: block;
     margin: 1em 0;
 }
-#forminscrocion span label{
+
+#forminscripcion span label {
     display: inline-block;
     width: 100px;
     border-bottom: 1px solid rgb(20, 87, 123);
-
 }
+
 #forminscripcionbtn{
-    background-color: rg(58, 160, 215);
+    background-color: rgb(52, 161, 219);
     border: 0;
     padding: 1em;
     margin-right: 1em;
@@ -112,12 +130,10 @@ h1{
     border-radius: 0.3em;
     cursor: pointer;
 
-}
-
-
-    
     
 
 
 
+
+    
 
