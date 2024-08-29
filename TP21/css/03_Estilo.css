@@ -1,0 +1,33 @@
+body{
+ background-color: blue;
+ font-family: 'Courier New', Courier, monospace;
+
+}
+h1{
+    color: white;
+
+}
+#cajas{
+    display: flex;
+    gap: 2em;
+
+}
+h2{
+    margin: 0%;
+}
+#formulario{
+    background-color: aqua;
+    padding: 1em;
+}
+#formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 1em;
+
+}
+#resultados{
+    background-color: black;
+    padding: 1em;
+    color: cyan;
+}

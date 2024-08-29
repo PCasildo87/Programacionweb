@@ -73,13 +73,17 @@ document.querySelector("#foco"). addEventListener("blur",()=>{
 })
 
 document.querySelector("#parrafo").addEventListener("scroll",(e)=>{
-    console.log("scroll")
-    console.log(e.target.scrollTop);
-    console.log(e.target.scrollHeight);
-    console.log(e.target.clientHeight);
-    let ubicacionscrroll =e.target.scrollHeight -(e.target.scrollTop + e.target.scrollHeight - e.target)
+    // console.log("scroll")
+    // console.log(e.target.scrollTop);
+    // console.log(e.target.scrollHeight);
+    // console.log(e.target.clientHeight);
+    let ubicacionscrroll = e.target.scrollHeight - (e.target.scrollTop + e.target.clientHeight)
     let alturaScroll = e.target.scrollHeight - e.target.clientHeight
-    let porcentualScroll = ubicacionScrroll/alturaScroll;
+    let porcentualScroll = ubicacionscrroll / alturaScroll;
     console.log(porcentualScroll);
+    let altura = 200 - 200 * porcentualScroll;
+
+    document.querySelector("#barralectura").style.height = altura  +"px";
+
 })
  
