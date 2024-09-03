@@ -30,17 +30,39 @@ function validaForm(){
         return false;
     }
     
-    let letrasaprobradas = "abcdefghijklmñopqrstuvwyzàéióúáèiò ú".split("")
+   let letrasaprobradas = "abcdefghijklmñopqrstuvwyzàéióúáèiò ú".split("")
     let arraynombre = nombre.value.split("");
     arraynombre.forEach((letra)=>{
         //console.log(letra)
         let resultado = letrasaprobradas.indexOf(letra.toLowerCase());
-        //console.log(resultado)
+        
         if(resultado === -1){
-            window.alert("el campo nombresolo acepta letras");
-        }
+           //window.alert("el campo nombre solo acepta letras"):
+            resp = false;
+
+
+
+        }})   
+        let arrayapellido = apellido.value.split("");
+        arrayapellido.forEach((letra)=>{
+            resp = false
+            let resultado = letrasaprobradas.indexOf(letra.toLowerCase());
+            if(resultado === -1){
+            
+                resp = false;
+    
+    
+    
+            }   
 
     });
+    if(resp){
+        window.alert("el campoapellidosolo acepta letras")
+        return false;
+
+    }
+       document.querySelector("#resultados").innerHTML += `"nombre recibido" ${nombre.value}<br>apellidorecibido ${apellido.value}<br>DNIrecibido${dni.value}`;
+
         
 return true;
     

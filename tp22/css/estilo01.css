@@ -1,0 +1,19 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    background-color: aqua;
+
+}
+.boton {
+    display: inline-block;
+    padding: 0.3em;
+    background-color: black;
+    color: white;
+
+} 
+.contenedor{
+  padding: 0.3em;
+  border: 2px white solid;
+  width: 400px;
+  padding: 1%;
+
+}  
