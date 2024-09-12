@@ -18,6 +18,13 @@ document.querySelector("#Documento").addEventListener("click",()=>{
 
     let clicks = 0;
 
-    document.querySelector("#Validarinputnumerico").addEventListener("click",()=>{
-        let numero = document.querySelector("#numerico").value
+    document.querySelector("#Validar").addEventListener("click",()=>{
+       let numero = document.querySelector("#numerico").value;
+       console.log(isNaN(numero))
+       if(isNaN(numero)){
+        document.querySelector("#contenedor3").innerHTML = "este campo no acepta numeros"
+       } else {
+        document.querySelector("#contenedor3").innerHTML = "validacion exitosa"
+       };
     })
+
