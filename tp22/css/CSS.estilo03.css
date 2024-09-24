@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: fit-content;
+
+}
+#Distribucion{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    background-color: black;
+    padding: 1em;
+
+}
+#Distribucion span{
+    width: 100px;
+    height: 50px;
+    background-color: darkred
+}
+.bloque{
+    display: flex;
+    flex-direction: column;
+    gap: 0,5em;
+    background-color: red;
+    width: fit-content;
+    padding: 1em;
+
+}
+
+button{
+    padding: 0,5em;
+    cursor: pointer;
+}
