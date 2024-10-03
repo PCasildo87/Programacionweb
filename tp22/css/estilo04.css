@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkslateblue;
+    padding: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.ejercicio{
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 500px;
+}
+.ejercicio h1{
+    font-size: 1.5em;
+    color: darkslateblue;
+}
+.ejercicio input{
+    width: 16em;
+}
+.ejercicio .btn{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 0.7em;
+    width: fit-content;
+}
+.ejercicio span{
+    display: flex;
+    gap: 1em;
+}
+.ejercicio .salida{
+    border: 2px darkslateblue solid;
+    width: 100%;
+}
+/* span{
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    width: fit-content;
+    height: fit-content;
+    background-color: blue;
+    padding: 10px;
+}
+.salida{
+    padding: 8px;
+    border: solid 2px black;
+
+} */
+ 
