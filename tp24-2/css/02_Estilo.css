@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    background-color: antiquewhite;
+    padding: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+ }
+ h1{
+    border-bottom: 4px solid darkblue;
+    color: red;
+ }
+ #cursos{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+ }
+ .curso{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+    padding: 1em;
+ }
+ .curso h1{
+    font-size: 1.3em;
+    border: none;
+
+ }
+ .curso.btn{
+    cursor: pointer;
+    color: white;
+    background-color: darkmagenta;
+    padding: 0.5em;
+ }
