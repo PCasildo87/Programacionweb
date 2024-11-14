@@ -5,10 +5,10 @@ document.querySelector("#btnAgregar").addEventListener("click", () => {
 })
 
 function cargarTarea() {
-    if(document.querySelector("#tarea").value==""){
+    if (document.querySelector("#tarea").value == "") {
         window.alert("ingresar un nombre de tarea para registrarla")
         return
-    } 
+    }
     let tarea = {
         id: Tareas.length,
         tarea: document.querySelector("#tarea").value,
@@ -33,7 +33,7 @@ function mostrarDatos() {
     //console.log(Tareaslocales)
     document.querySelector("tbody").innerHTML = ""
     Tareaslocales.forEach(tarea => {
-        if(tarea.estado==="eliminada"){
+        if (tarea.estado === "eliminada") {
             return
         }
         //console.log(Tarea)
@@ -59,7 +59,7 @@ function mostrarDatos() {
     }
     )
     //Event listener
-   
+
     document.querySelectorAll(".btnpendiente").forEach((boton) => {
         boton.addEventListener("click", (e) => {
             // console.log("botonpendiente")
@@ -71,26 +71,55 @@ function mostrarDatos() {
         })
     })
 
-document.querySelectorAll(".btncompleta").forEach((boton) => {
-    boton.addEventListener("click", (e) => {
-        // console.log("botonpendiente")
-        //console.log(e.target.dataset.id)
-        //console.log(Tareas[e.target.dataset.id])
-        Tareas[e.target.dataset.id].estado = "pendiente";
-        localStorage.setItem("Tareas", JSON.stringify(Tareas))
-        mostrarDatos();
+    document.querySelectorAll(".btncompleta").forEach((boton) => {
+        boton.addEventListener("click", (e) => {
+            // console.log("botonpendiente")
+            //console.log(e.target.dataset.id)
+            //console.log(Tareas[e.target.dataset.id])
+            Tareas[e.target.dataset.id].estado = "pendiente";
+            localStorage.setItem("Tareas", JSON.stringify(Tareas))
+            mostrarDatos();
+        })
     })
-})
-document.querySelectorAll(".btnborrar").forEach((boton) => {
-    boton.addEventListener("click", (e) => {
-        // console.log("botonpendiente")
-        //console.log(e.target.dataset.id)
-        //console.log(Tareas[e.target.dataset.id])
-        Tareas[e.target.dataset.id].estado = "eliminada";
-        localStorage.setItem("Tareas", JSON.stringify(Tareas))
-        mostrarDatos();
+
+
+    document.querySelectorAll(".btnborrar").forEach((boton) => {
+        boton.addEventListener("click", (e) => {
+            // console.log("botonpendiente")
+            //console.log(e.target.dataset.id)
+            //console.log(Tareas[e.target.dataset.id])
+            Tareas[e.target.dataset.id].estado = "eliminada";
+            localStorage.setItem("Tareas", JSON.stringify(Tareas))
+            mostrarDatos();
+        })
     })
-})
+    document.querySelectorAll(".btnEditor").forEach((boton) => {
+        boton.addEventListener("click", (e)=>{
+            modificartarea(e.target.dataset.id)
+
+        })
+    })
+
 }
 mostrarDatos();
+function modificartarea(id){
+    document.querySelector("#cortina").style.display="flex"
+    document.querySelector("#modificarid").value =Tareas[id].id
+    document.querySelector("#modificartarea").value = Tareas[id].tarea
+    document.querySelector("#modificarestado").value = Tareas[id].estado
+}
 
+document.querySelector("#btncancelarmodificartarea").addEventListener("click",() =>{
+    document.querySelector("#cortina").style.display ="none"
+})
+
+document.querySelector("#btnmodificar").addEventListener("click" , () =>{
+    let id = document.querySelector("#modificarid").value
+    Tareas[id].tarea = document.querySelector("#modificartarea").value
+    Tareas[id].estado = document.querySelector("#modificarestado").value 
+    localStorage.setItem("Tareas", JSON.stringify(Tareas))
+
+    document.querySelector("#tarea").value = ""
+    mostrarDatos()
+document.querySelector("#cortina").style.display ="none"
+})

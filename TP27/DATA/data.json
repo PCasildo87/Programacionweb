@@ -1,0 +1,20 @@
+[{
+    "nombre": "Pablo",
+    "apellido":"Lopez",
+    "direccion": "calle falsa123",
+    "mail":"Lopez@yahoo.com",
+    "telefono":23455783288
+},{
+    "nombre": "Mateo",
+    "apellido":"Lopez",
+    "direccion": "calle falsa123",
+    "mail":"Mateo@yahoo.com",
+    "telefono":54638954865
+
+},{
+    "nombre": "Mateo",
+    "apellido":"Lopez",
+    "direccion": "calle falsa123",
+   " mail":"Mateo@yahoo.com",
+    "telefono":54638954865
+}]
