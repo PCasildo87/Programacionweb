@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+
+}
+img{
+    max-width: 300px;
+
+}
+form{
+ display: flex;
+ flex-direction: column;
+gap: 0,5;
+padding: 1em;
+background-color: blue;
+}   
